@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		66F9BB2DBDFA87904CB2071D /* Pods_License_Plate_Information.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B7B6EF68BA43A8F8C561DA /* Pods_License_Plate_Information.framework */; };
+		EC155F0C1DDB95CF00759AFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC155F0B1DDB95CF00759AFA /* main.m */; };
+		EC155F0F1DDB95CF00759AFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC155F0E1DDB95CF00759AFA /* AppDelegate.m */; };
+		EC155F121DDB95CF00759AFA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC155F111DDB95CF00759AFA /* ViewController.m */; };
+		EC155F151DDB95CF00759AFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC155F131DDB95CF00759AFA /* Main.storyboard */; };
+		EC155F181DDB95CF00759AFA /* License_Plate_Information.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC155F161DDB95CF00759AFA /* License_Plate_Information.xcdatamodeld */; };
+		EC155F1A1DDB95CF00759AFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC155F191DDB95CF00759AFA /* Assets.xcassets */; };
+		EC155F1D1DDB95CF00759AFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC155F1B1DDB95CF00759AFA /* LaunchScreen.storyboard */; };
+		EC155F301DDBA1E400759AFA /* IMG_2132.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EC155F2F1DDBA1E400759AFA /* IMG_2132.JPG */; };
+		EC155F321DDBA4D700759AFA /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = EC155F311DDBA4D700759AFA /* tessdata */; };
+		EC155F341DDBA8F400759AFA /* Lenore.png in Resources */ = {isa = PBXBuildFile; fileRef = EC155F331DDBA8F400759AFA /* Lenore.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3729BB67802B313D750EAF91 /* Pods-License Plate Information.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-License Plate Information.debug.xcconfig"; path = "Pods/Target Support Files/Pods-License Plate Information/Pods-License Plate Information.debug.xcconfig"; sourceTree = "<group>"; };
+		6165A48203E6DD16153D1CBE /* Pods-License Plate Information.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-License Plate Information.release.xcconfig"; path = "Pods/Target Support Files/Pods-License Plate Information/Pods-License Plate Information.release.xcconfig"; sourceTree = "<group>"; };
+		D5B7B6EF68BA43A8F8C561DA /* Pods_License_Plate_Information.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_License_Plate_Information.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC155F071DDB95CE00759AFA /* License Plate Information.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "License Plate Information.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC155F0B1DDB95CF00759AFA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC155F0D1DDB95CF00759AFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EC155F0E1DDB95CF00759AFA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EC155F101DDB95CF00759AFA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EC155F111DDB95CF00759AFA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EC155F141DDB95CF00759AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC155F171DDB95CF00759AFA /* License_Plate_Information.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = License_Plate_Information.xcdatamodel; sourceTree = "<group>"; };
+		EC155F191DDB95CF00759AFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC155F1C1DDB95CF00759AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC155F1E1DDB95CF00759AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC155F271DDB97D100759AFA /* libz.1.1.3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.1.3.tbd; path = usr/lib/libz.1.1.3.tbd; sourceTree = SDKROOT; };
+		EC155F2F1DDBA1E400759AFA /* IMG_2132.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2132.JPG; sourceTree = "<group>"; };
+		EC155F311DDBA4D700759AFA /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; name = tessdata; path = "License Plate Information/Tesseract Resources/tessdata"; sourceTree = "<group>"; };
+		EC155F331DDBA8F400759AFA /* Lenore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lenore.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC155F041DDB95CE00759AFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66F9BB2DBDFA87904CB2071D /* Pods_License_Plate_Information.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F6EE3745C1D5CE1DFD178BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3729BB67802B313D750EAF91 /* Pods-License Plate Information.debug.xcconfig */,
+				6165A48203E6DD16153D1CBE /* Pods-License Plate Information.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EC155EFE1DDB95CE00759AFA = {
+			isa = PBXGroup;
+			children = (
+				EC155F311DDBA4D700759AFA /* tessdata */,
+				EC155F091DDB95CF00759AFA /* License Plate Information */,
+				EC155F081DDB95CE00759AFA /* Products */,
+				EC155F261DDB97D100759AFA /* Frameworks */,
+				3F6EE3745C1D5CE1DFD178BD /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		EC155F081DDB95CE00759AFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC155F071DDB95CE00759AFA /* License Plate Information.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC155F091DDB95CF00759AFA /* License Plate Information */ = {
+			isa = PBXGroup;
+			children = (
+				EC155F331DDBA8F400759AFA /* Lenore.png */,
+				EC155F2F1DDBA1E400759AFA /* IMG_2132.JPG */,
+				EC155F0D1DDB95CF00759AFA /* AppDelegate.h */,
+				EC155F0E1DDB95CF00759AFA /* AppDelegate.m */,
+				EC155F101DDB95CF00759AFA /* ViewController.h */,
+				EC155F111DDB95CF00759AFA /* ViewController.m */,
+				EC155F131DDB95CF00759AFA /* Main.storyboard */,
+				EC155F191DDB95CF00759AFA /* Assets.xcassets */,
+				EC155F1B1DDB95CF00759AFA /* LaunchScreen.storyboard */,
+				EC155F1E1DDB95CF00759AFA /* Info.plist */,
+				EC155F161DDB95CF00759AFA /* License_Plate_Information.xcdatamodeld */,
+				EC155F0A1DDB95CF00759AFA /* Supporting Files */,
+			);
+			path = "License Plate Information";
+			sourceTree = "<group>";
+		};
+		EC155F0A1DDB95CF00759AFA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC155F0B1DDB95CF00759AFA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC155F261DDB97D100759AFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC155F271DDB97D100759AFA /* libz.1.1.3.tbd */,
+				D5B7B6EF68BA43A8F8C561DA /* Pods_License_Plate_Information.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC155F061DDB95CE00759AFA /* License Plate Information */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC155F211DDB95CF00759AFA /* Build configuration list for PBXNativeTarget "License Plate Information" */;
+			buildPhases = (
+				49C822AD228468302E35345E /* [CP] Check Pods Manifest.lock */,
+				EC155F031DDB95CE00759AFA /* Sources */,
+				EC155F041DDB95CE00759AFA /* Frameworks */,
+				EC155F051DDB95CE00759AFA /* Resources */,
+				2F731661C011348DB87F1477 /* [CP] Embed Pods Frameworks */,
+				2E21BE5DA29055E6CDA30D74 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "License Plate Information";
+			productName = "License Plate Information";
+			productReference = EC155F071DDB95CE00759AFA /* License Plate Information.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC155EFF1DDB95CE00759AFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Trent Callan";
+				TargetAttributes = {
+					EC155F061DDB95CE00759AFA = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = MMZU26F68L;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EC155F021DDB95CE00759AFA /* Build configuration list for PBXProject "License Plate Information" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC155EFE1DDB95CE00759AFA;
+			productRefGroup = EC155F081DDB95CE00759AFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC155F061DDB95CE00759AFA /* License Plate Information */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC155F051DDB95CE00759AFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC155F1D1DDB95CF00759AFA /* LaunchScreen.storyboard in Resources */,
+				EC155F301DDBA1E400759AFA /* IMG_2132.JPG in Resources */,
+				EC155F1A1DDB95CF00759AFA /* Assets.xcassets in Resources */,
+				EC155F151DDB95CF00759AFA /* Main.storyboard in Resources */,
+				EC155F341DDBA8F400759AFA /* Lenore.png in Resources */,
+				EC155F321DDBA4D700759AFA /* tessdata in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E21BE5DA29055E6CDA30D74 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-License Plate Information/Pods-License Plate Information-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F731661C011348DB87F1477 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-License Plate Information/Pods-License Plate Information-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49C822AD228468302E35345E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC155F031DDB95CE00759AFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC155F121DDB95CF00759AFA /* ViewController.m in Sources */,
+				EC155F0F1DDB95CF00759AFA /* AppDelegate.m in Sources */,
+				EC155F0C1DDB95CF00759AFA /* main.m in Sources */,
+				EC155F181DDB95CF00759AFA /* License_Plate_Information.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EC155F131DDB95CF00759AFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC155F141DDB95CF00759AFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC155F1B1DDB95CF00759AFA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC155F1C1DDB95CF00759AFA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC155F1F1DDB95CF00759AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EC155F201DDB95CF00759AFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC155F221DDB95CF00759AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3729BB67802B313D750EAF91 /* Pods-License Plate Information.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MMZU26F68L;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "License Plate Information/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lstdc++";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joamjoamjoam.License-Plate-Information";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC155F231DDB95CF00759AFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6165A48203E6DD16153D1CBE /* Pods-License Plate Information.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MMZU26F68L;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "License Plate Information/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lstdc++";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joamjoamjoam.License-Plate-Information";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC155F021DDB95CE00759AFA /* Build configuration list for PBXProject "License Plate Information" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC155F1F1DDB95CF00759AFA /* Debug */,
+				EC155F201DDB95CF00759AFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC155F211DDB95CF00759AFA /* Build configuration list for PBXNativeTarget "License Plate Information" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC155F221DDB95CF00759AFA /* Debug */,
+				EC155F231DDB95CF00759AFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EC155F161DDB95CF00759AFA /* License_Plate_Information.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EC155F171DDB95CF00759AFA /* License_Plate_Information.xcdatamodel */,
+			);
+			currentVersion = EC155F171DDB95CF00759AFA /* License_Plate_Information.xcdatamodel */;
+			path = License_Plate_Information.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EC155EFF1DDB95CE00759AFA /* Project object */;
+}
