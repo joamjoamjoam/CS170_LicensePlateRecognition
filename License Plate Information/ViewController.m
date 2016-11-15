@@ -112,7 +112,7 @@
     tesseract.maximumRecognitionTime = 60.0;
     
     // Start the recognition
-    [tesseract recognize];
+    [tesseract recognize]; 
     
     // Retrieve the recognized text
     NSLog(@"%@", [tesseract recognizedText]);
