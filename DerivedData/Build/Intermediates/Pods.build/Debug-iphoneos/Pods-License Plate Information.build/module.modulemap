@@ -1,6 +1,0 @@
-framework module Pods_License_Plate_Information {
-  umbrella header "Pods-License Plate Information-umbrella.h"
-
-  export *
-  module * { export * }
-}
