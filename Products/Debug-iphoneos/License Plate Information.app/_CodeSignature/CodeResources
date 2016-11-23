@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		R91ZKUM0WOT16dMtZMichHtvBXw=
+		yNB6YxCIXcas8etQSj7ha3KMEmA=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -14,31 +14,47 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		ir+BIWS8PxamvSLMtZKulNpBUoI=
+		elHms0OgeGITHb85HSS8JtZ0NN8=
+		</data>
+		<key>Base.lproj/Main.storyboardc/5C1-D1-oEH-view-uGm-uz-red.nib</key>
+		<data>
+		DSKtu5qAwPF8UqkuO/F8vneOAHw=
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		rEDuTIg2FqJTOb1qz/gzmmBOeME=
+		y453GV02qNf/dwlvhqoeA5lDTIo=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
-		MDrKFvFWroTb0+KEbQShBcoBvo4=
+		pVfRxxBSirfGEcsS+rRG9pezyto=
+		</data>
+		<key>Base.lproj/Main.storyboardc/UINavigationController-H2a-sd-Xew.nib</key>
+		<data>
+		utBQdgW50BNikugLSI05QGNiuFs=
+		</data>
+		<key>Base.lproj/Main.storyboardc/UIViewController-5C1-D1-oEH.nib</key>
+		<data>
+		S0t9qhJcUeve7rd5xh/71R7d7SQ=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
 		<data>
-		YASRRRx7+X9M23AdVhrqTJyMqh0=
+		RazfCzj+EZETGl1At22qX+l2GLM=
+		</data>
+		<key>Base.lproj/Main.storyboardc/sj7-Q3-D6m-view-tD7-ZR-ZqH.nib</key>
+		<data>
+		tosITjYBZcR0k7ypGJhzctCa95U=
 		</data>
 		<key>Frameworks/TesseractOCR.framework/Info.plist</key>
 		<data>
-		CTiL3cbgICpOOF0Ls9VFU4RZzUQ=
+		5kWiyjfZUJPEZpf+RK87eT8lGE4=
 		</data>
 		<key>Frameworks/TesseractOCR.framework/TesseractOCR</key>
 		<data>
-		o402I5Ch4NVFT/fw7Hq/t96c05Q=
+		MbNA7t+VvTDnQX00XwnnJnscKjo=
 		</data>
 		<key>Frameworks/TesseractOCR.framework/_CodeSignature/CodeResources</key>
 		<data>
-		nC3XNDgwK3l4vpw1iWe5EzoR0yQ=
+		RkdNRlnpVmn5wo9KqMBpa+ZW1H4=
 		</data>
 		<key>IMG_2132.JPG</key>
 		<data>
@@ -46,7 +62,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		JWOkbLkAAUuNukI9aRnKC/IoP8U=
+		GwL8lBqufLIUCi0V0wGMkj89AMc=
 		</data>
 		<key>Lenore.png</key>
 		<data>
@@ -68,9 +84,17 @@
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
+		<key>button.jpg</key>
+		<data>
+		eCMBvrexgWWmAxRwuCtSG8inuaU=
+		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
 		1b6SoWbC8YECPCZcwsdIm3msRc4=
+		</data>
+		<key>overlay.png</key>
+		<data>
+		Eth/yTgZ3xK6bOKdMWagkvyxGcU=
 		</data>
 		<key>tessdata/dan-frak.traineddata</key>
 		<data>
@@ -156,6 +180,10 @@
 		<data>
 		5VgVWD2d7zSzhZgAePi+4uiIh6c=
 		</data>
+		<key>todo.txt</key>
+		<data>
+		Z0+VreirPm9SXGFTdOWg2CHeN80=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -163,11 +191,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R91ZKUM0WOT16dMtZMichHtvBXw=
+			yNB6YxCIXcas8etQSj7ha3KMEmA=
 			</data>
 			<key>hash2</key>
 			<data>
-			09BtbPLktaN0657QzkMj+CMceUAk+yrO756zhAILYW0=
+			7hkpAg8RGs5S4YD4P0aUBwEcN6j0o41bSWEnMnBm2tE=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -185,77 +213,121 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ir+BIWS8PxamvSLMtZKulNpBUoI=
+			elHms0OgeGITHb85HSS8JtZ0NN8=
 			</data>
 			<key>hash2</key>
 			<data>
-			97J3kwpMpzx/FEuLqVmlDLXZpV/7uHC/LEeA6GToewk=
+			/3zM0t4ZYZVo2W/DnqJ1y6W+xCvT/b3PEY5kAybvHwc=
+			</data>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/5C1-D1-oEH-view-uGm-uz-red.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DSKtu5qAwPF8UqkuO/F8vneOAHw=
+			</data>
+			<key>hash2</key>
+			<data>
+			c06relr8ifZ6i9WLNw8HZus0MTaFfSNMhhwGGoN2Ehk=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rEDuTIg2FqJTOb1qz/gzmmBOeME=
+			y453GV02qNf/dwlvhqoeA5lDTIo=
 			</data>
 			<key>hash2</key>
 			<data>
-			K3IWProoIeFOhRdKybw4CNCo5qSzIfIHCFYcyxJ+4IA=
+			5iymuNqHUEQdALLh6uJnLpHsZQF5KzYhFZot773GbJs=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MDrKFvFWroTb0+KEbQShBcoBvo4=
+			pVfRxxBSirfGEcsS+rRG9pezyto=
 			</data>
 			<key>hash2</key>
 			<data>
-			PpvapAjR62rl6Ym4E6hkTgpKmBICxTaQXeUqcpHmmqQ=
+			LGOUkYyicXa8nWGXA1DsDoje9Yk9Kr7H2uORUex49+o=
+			</data>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/UINavigationController-H2a-sd-Xew.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			utBQdgW50BNikugLSI05QGNiuFs=
+			</data>
+			<key>hash2</key>
+			<data>
+			T/XgdmirE+fwJKH6JFThnJsuuJczaooYMQiZSv54R/o=
+			</data>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/UIViewController-5C1-D1-oEH.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			S0t9qhJcUeve7rd5xh/71R7d7SQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			WF0V9X8nbyBE6JmSAbiKUTaVBe6Ef+4qU+qkkOM9Tt4=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YASRRRx7+X9M23AdVhrqTJyMqh0=
+			RazfCzj+EZETGl1At22qX+l2GLM=
 			</data>
 			<key>hash2</key>
 			<data>
-			Y05ozts80tx8TLwcuM0BtBkLihCEBF8jbR17gTDmWdw=
+			U+qBw5xrkfVKL++8iabTi9zpKWK+C1/L4um8FKvCYlI=
+			</data>
+		</dict>
+		<key>Base.lproj/Main.storyboardc/sj7-Q3-D6m-view-tD7-ZR-ZqH.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tosITjYBZcR0k7ypGJhzctCa95U=
+			</data>
+			<key>hash2</key>
+			<data>
+			JYfq4t6KXce70YPD5zTWfl3t3UDknC68L78A5gZSMtc=
 			</data>
 		</dict>
 		<key>Frameworks/TesseractOCR.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CTiL3cbgICpOOF0Ls9VFU4RZzUQ=
+			5kWiyjfZUJPEZpf+RK87eT8lGE4=
 			</data>
 			<key>hash2</key>
 			<data>
-			qmUFcxKWVA+QKMyX9t0vjYvW0hAfmjT8Y6v13/DTCZ8=
+			hcS5hsjg9lTaUDCufA+bKGucKY4BoonjOK5/tkEGEEs=
 			</data>
 		</dict>
 		<key>Frameworks/TesseractOCR.framework/TesseractOCR</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			o402I5Ch4NVFT/fw7Hq/t96c05Q=
+			MbNA7t+VvTDnQX00XwnnJnscKjo=
 			</data>
 			<key>hash2</key>
 			<data>
-			VyDD7Ze3UbAIm9+f9rSgYHGACMVYFlaDZNO/sK4muLw=
+			Cpnydyxa+HolCUg4dVhTBZ5Av7ULRGiZIdeXAiSc1I4=
 			</data>
 		</dict>
 		<key>Frameworks/TesseractOCR.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nC3XNDgwK3l4vpw1iWe5EzoR0yQ=
+			RkdNRlnpVmn5wo9KqMBpa+ZW1H4=
 			</data>
 			<key>hash2</key>
 			<data>
-			MMpsKmkRkZ71j+Y96mHXQis03iDDZ55FFkOBM85FyDQ=
+			+2Ae23dUdKlAvDbsiKY35m0B+eRlH18MkBPU9vzQeBY=
 			</data>
 		</dict>
 		<key>IMG_2132.JPG</key>
@@ -313,6 +385,17 @@
 			XgsT+3Vb48BY38B6lG2t88Lqwb6ES0dL6MbBvCwW4F4=
 			</data>
 		</dict>
+		<key>button.jpg</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eCMBvrexgWWmAxRwuCtSG8inuaU=
+			</data>
+			<key>hash2</key>
+			<data>
+			9Gqm+HAqupw/CU914Nl+QZIQtGHt1FGB39ow/ggIhyA=
+			</data>
+		</dict>
 		<key>embedded.mobileprovision</key>
 		<dict>
 			<key>hash</key>
@@ -322,6 +405,17 @@
 			<key>hash2</key>
 			<data>
 			LqPWQtGf7BidU5LAGrnewsfyBvygyxNlbv9SBLRcw5U=
+			</data>
+		</dict>
+		<key>overlay.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Eth/yTgZ3xK6bOKdMWagkvyxGcU=
+			</data>
+			<key>hash2</key>
+			<data>
+			umVQgBBVDTcjCXFWVlj10RVM7OWJirX/vrDe12OVQyg=
 			</data>
 		</dict>
 		<key>tessdata/dan-frak.traineddata</key>
@@ -553,6 +647,17 @@
 			<key>hash2</key>
 			<data>
 			Hn8eWerSShNtwGJumAGVlKBC5iCHv8+PD92z4oO12H8=
+			</data>
+		</dict>
+		<key>todo.txt</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Z0+VreirPm9SXGFTdOWg2CHeN80=
+			</data>
+			<key>hash2</key>
+			<data>
+			RlBQhFvmCZF/+x4odXOB07H637K7IjwFHGOd3OrLcXo=
 			</data>
 		</dict>
 	</dict>

@@ -8,9 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		66F9BB2DBDFA87904CB2071D /* Pods_License_Plate_Information.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B7B6EF68BA43A8F8C561DA /* Pods_License_Plate_Information.framework */; };
+		EC0522E01DE28D74008746B7 /* citationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0522DF1DE28D74008746B7 /* citationTableViewController.m */; };
+		EC0522E31DE29091008746B7 /* mainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0522E21DE29091008746B7 /* mainNavigationController.m */; };
+		EC0522E61DE29140008746B7 /* Cars.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0522E51DE29140008746B7 /* Cars.m */; };
+		EC0522E91DE2A023008746B7 /* carDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0522E81DE2A023008746B7 /* carDetailViewController.m */; };
+		EC0522EB1DE2AF1C008746B7 /* todo.txt in Resources */ = {isa = PBXBuildFile; fileRef = EC0522EA1DE2AF1C008746B7 /* todo.txt */; };
 		EC155F0C1DDB95CF00759AFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC155F0B1DDB95CF00759AFA /* main.m */; };
 		EC155F0F1DDB95CF00759AFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC155F0E1DDB95CF00759AFA /* AppDelegate.m */; };
-		EC155F121DDB95CF00759AFA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC155F111DDB95CF00759AFA /* ViewController.m */; };
+		EC155F121DDB95CF00759AFA /* scanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC155F111DDB95CF00759AFA /* scanViewController.m */; };
 		EC155F151DDB95CF00759AFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC155F131DDB95CF00759AFA /* Main.storyboard */; };
 		EC155F181DDB95CF00759AFA /* License_Plate_Information.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC155F161DDB95CF00759AFA /* License_Plate_Information.xcdatamodeld */; };
 		EC155F1A1DDB95CF00759AFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC155F191DDB95CF00759AFA /* Assets.xcassets */; };
@@ -18,18 +23,30 @@
 		EC155F301DDBA1E400759AFA /* IMG_2132.JPG in Resources */ = {isa = PBXBuildFile; fileRef = EC155F2F1DDBA1E400759AFA /* IMG_2132.JPG */; };
 		EC155F321DDBA4D700759AFA /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = EC155F311DDBA4D700759AFA /* tessdata */; };
 		EC155F341DDBA8F400759AFA /* Lenore.png in Resources */ = {isa = PBXBuildFile; fileRef = EC155F331DDBA8F400759AFA /* Lenore.png */; };
+		EC155F641DDD6DE200759AFA /* overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = EC155F631DDD6DE200759AFA /* overlay.png */; };
+		EC155F6B1DDE781300759AFA /* myCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC155F6A1DDE781300759AFA /* myCaptureManager.m */; };
+		EC155F6F1DDF6DD400759AFA /* button.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EC155F6E1DDF6DD400759AFA /* button.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3729BB67802B313D750EAF91 /* Pods-License Plate Information.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-License Plate Information.debug.xcconfig"; path = "Pods/Target Support Files/Pods-License Plate Information/Pods-License Plate Information.debug.xcconfig"; sourceTree = "<group>"; };
 		6165A48203E6DD16153D1CBE /* Pods-License Plate Information.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-License Plate Information.release.xcconfig"; path = "Pods/Target Support Files/Pods-License Plate Information/Pods-License Plate Information.release.xcconfig"; sourceTree = "<group>"; };
 		D5B7B6EF68BA43A8F8C561DA /* Pods_License_Plate_Information.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_License_Plate_Information.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC0522DE1DE28D74008746B7 /* citationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = citationTableViewController.h; sourceTree = "<group>"; };
+		EC0522DF1DE28D74008746B7 /* citationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = citationTableViewController.m; sourceTree = "<group>"; };
+		EC0522E11DE29091008746B7 /* mainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainNavigationController.h; sourceTree = "<group>"; };
+		EC0522E21DE29091008746B7 /* mainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainNavigationController.m; sourceTree = "<group>"; };
+		EC0522E41DE29140008746B7 /* Cars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cars.h; sourceTree = "<group>"; };
+		EC0522E51DE29140008746B7 /* Cars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cars.m; sourceTree = "<group>"; };
+		EC0522E71DE2A023008746B7 /* carDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = carDetailViewController.h; sourceTree = "<group>"; };
+		EC0522E81DE2A023008746B7 /* carDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = carDetailViewController.m; sourceTree = "<group>"; };
+		EC0522EA1DE2AF1C008746B7 /* todo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = todo.txt; sourceTree = "<group>"; };
 		EC155F071DDB95CE00759AFA /* License Plate Information.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "License Plate Information.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC155F0B1DDB95CF00759AFA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC155F0D1DDB95CF00759AFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EC155F0E1DDB95CF00759AFA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EC155F101DDB95CF00759AFA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EC155F111DDB95CF00759AFA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EC155F101DDB95CF00759AFA /* scanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scanViewController.h; sourceTree = "<group>"; };
+		EC155F111DDB95CF00759AFA /* scanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = scanViewController.m; sourceTree = "<group>"; };
 		EC155F141DDB95CF00759AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC155F171DDB95CF00759AFA /* License_Plate_Information.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = License_Plate_Information.xcdatamodel; sourceTree = "<group>"; };
 		EC155F191DDB95CF00759AFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,6 +56,10 @@
 		EC155F2F1DDBA1E400759AFA /* IMG_2132.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2132.JPG; sourceTree = "<group>"; };
 		EC155F311DDBA4D700759AFA /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; name = tessdata; path = "License Plate Information/Tesseract Resources/tessdata"; sourceTree = "<group>"; };
 		EC155F331DDBA8F400759AFA /* Lenore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lenore.png; sourceTree = "<group>"; };
+		EC155F631DDD6DE200759AFA /* overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlay.png; sourceTree = "<group>"; };
+		EC155F691DDE781300759AFA /* myCaptureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myCaptureManager.h; sourceTree = "<group>"; };
+		EC155F6A1DDE781300759AFA /* myCaptureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myCaptureManager.m; sourceTree = "<group>"; };
+		EC155F6E1DDF6DD400759AFA /* button.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = button.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +81,7 @@
 				6165A48203E6DD16153D1CBE /* Pods-License Plate Information.release.xcconfig */,
 			);
 			name = Pods;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		EC155EFE1DDB95CE00759AFA = {
@@ -68,8 +90,8 @@
 				EC155F311DDBA4D700759AFA /* tessdata */,
 				EC155F091DDB95CF00759AFA /* License Plate Information */,
 				EC155F081DDB95CE00759AFA /* Products */,
+				EC155F0A1DDB95CF00759AFA /* Supporting Files */,
 				EC155F261DDB97D100759AFA /* Frameworks */,
-				3F6EE3745C1D5CE1DFD178BD /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,18 +106,10 @@
 		EC155F091DDB95CF00759AFA /* License Plate Information */ = {
 			isa = PBXGroup;
 			children = (
-				EC155F331DDBA8F400759AFA /* Lenore.png */,
-				EC155F2F1DDBA1E400759AFA /* IMG_2132.JPG */,
-				EC155F0D1DDB95CF00759AFA /* AppDelegate.h */,
-				EC155F0E1DDB95CF00759AFA /* AppDelegate.m */,
-				EC155F101DDB95CF00759AFA /* ViewController.h */,
-				EC155F111DDB95CF00759AFA /* ViewController.m */,
+				EC155F681DDE697D00759AFA /* Model */,
+				EC155F731DE2882A00759AFA /* View Controllers */,
 				EC155F131DDB95CF00759AFA /* Main.storyboard */,
-				EC155F191DDB95CF00759AFA /* Assets.xcassets */,
-				EC155F1B1DDB95CF00759AFA /* LaunchScreen.storyboard */,
-				EC155F1E1DDB95CF00759AFA /* Info.plist */,
-				EC155F161DDB95CF00759AFA /* License_Plate_Information.xcdatamodeld */,
-				EC155F0A1DDB95CF00759AFA /* Supporting Files */,
+				EC0522EA1DE2AF1C008746B7 /* todo.txt */,
 			);
 			path = "License Plate Information";
 			sourceTree = "<group>";
@@ -103,9 +117,21 @@
 		EC155F0A1DDB95CF00759AFA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EC155F1B1DDB95CF00759AFA /* LaunchScreen.storyboard */,
+				EC155F1E1DDB95CF00759AFA /* Info.plist */,
+				EC155F161DDB95CF00759AFA /* License_Plate_Information.xcdatamodeld */,
+				3F6EE3745C1D5CE1DFD178BD /* Pods */,
+				EC155F191DDB95CF00759AFA /* Assets.xcassets */,
+				EC155F0D1DDB95CF00759AFA /* AppDelegate.h */,
+				EC155F0E1DDB95CF00759AFA /* AppDelegate.m */,
+				EC155F331DDBA8F400759AFA /* Lenore.png */,
+				EC155F2F1DDBA1E400759AFA /* IMG_2132.JPG */,
+				EC155F631DDD6DE200759AFA /* overlay.png */,
+				EC155F6E1DDF6DD400759AFA /* button.jpg */,
 				EC155F0B1DDB95CF00759AFA /* main.m */,
 			);
 			name = "Supporting Files";
+			path = "License Plate Information";
 			sourceTree = "<group>";
 		};
 		EC155F261DDB97D100759AFA /* Frameworks */ = {
@@ -115,6 +141,32 @@
 				D5B7B6EF68BA43A8F8C561DA /* Pods_License_Plate_Information.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC155F681DDE697D00759AFA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC155F691DDE781300759AFA /* myCaptureManager.h */,
+				EC155F6A1DDE781300759AFA /* myCaptureManager.m */,
+				EC0522E41DE29140008746B7 /* Cars.h */,
+				EC0522E51DE29140008746B7 /* Cars.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EC155F731DE2882A00759AFA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC155F101DDB95CF00759AFA /* scanViewController.h */,
+				EC155F111DDB95CF00759AFA /* scanViewController.m */,
+				EC0522DE1DE28D74008746B7 /* citationTableViewController.h */,
+				EC0522DF1DE28D74008746B7 /* citationTableViewController.m */,
+				EC0522E11DE29091008746B7 /* mainNavigationController.h */,
+				EC0522E21DE29091008746B7 /* mainNavigationController.m */,
+				EC0522E71DE2A023008746B7 /* carDetailViewController.h */,
+				EC0522E81DE2A023008746B7 /* carDetailViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,9 +233,12 @@
 			files = (
 				EC155F1D1DDB95CF00759AFA /* LaunchScreen.storyboard in Resources */,
 				EC155F301DDBA1E400759AFA /* IMG_2132.JPG in Resources */,
+				EC155F6F1DDF6DD400759AFA /* button.jpg in Resources */,
+				EC155F641DDD6DE200759AFA /* overlay.png in Resources */,
 				EC155F1A1DDB95CF00759AFA /* Assets.xcassets in Resources */,
 				EC155F151DDB95CF00759AFA /* Main.storyboard in Resources */,
 				EC155F341DDBA8F400759AFA /* Lenore.png in Resources */,
+				EC0522EB1DE2AF1C008746B7 /* todo.txt in Resources */,
 				EC155F321DDBA4D700759AFA /* tessdata in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,8 +298,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC155F121DDB95CF00759AFA /* ViewController.m in Sources */,
+				EC155F6B1DDE781300759AFA /* myCaptureManager.m in Sources */,
+				EC155F121DDB95CF00759AFA /* scanViewController.m in Sources */,
+				EC0522E61DE29140008746B7 /* Cars.m in Sources */,
 				EC155F0F1DDB95CF00759AFA /* AppDelegate.m in Sources */,
+				EC0522E31DE29091008746B7 /* mainNavigationController.m in Sources */,
+				EC0522E01DE28D74008746B7 /* citationTableViewController.m in Sources */,
+				EC0522E91DE2A023008746B7 /* carDetailViewController.m in Sources */,
 				EC155F0C1DDB95CF00759AFA /* main.m in Sources */,
 				EC155F181DDB95CF00759AFA /* License_Plate_Information.xcdatamodeld in Sources */,
 			);
