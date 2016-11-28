@@ -11,7 +11,7 @@
 @interface carDetailViewController (){
     NSMutableArray* carsDatabase;
     Cars* carSelected;
-    NSIndexPath* selectedCarIndexPath;
+    NSInteger selectedCarIndexPathRow;
     
 }
 
@@ -19,21 +19,34 @@
 
 @implementation carDetailViewController
 @synthesize carImageView;
-@synthesize carMakeLabel;
-@synthesize carModelLabel;
 @synthesize carLicensePlateLabel;
+@synthesize carCitedSwitch;
+@synthesize carClassTypeLabel;
+@synthesize carMakeTextField;
+@synthesize carModelTextField;
 - (void)viewDidLoad {
     [super viewDidLoad];
     carsDatabase = [self loadObjectWithKey:@"carsDatabase"];
-    selectedCarIndexPath = [[NSUserDefaults standardUserDefaults] objectForKey:@"selectedCarIndexPath"];
-    carSelected = [carsDatabase objectAtIndex:selectedCarIndexPath.row];
+    selectedCarIndexPathRow = [[NSUserDefaults standardUserDefaults] integerForKey:@"carSelectedIndexPathRow"];
+    carSelected = [carsDatabase objectAtIndex:selectedCarIndexPathRow];
     
+    carMakeTextField.text = carSelected.make;
+    carModelTextField.text = carSelected.model;
     
     carImageView.image = carSelected.licensePlateImage;
-    carMakeLabel.text = carSelected.make;
-    carModelLabel.text = carSelected.model;
     carLicensePlateLabel.text = carSelected.licensePlateString;
-    // Do any additional setup after loading the view.
+    carClassTypeLabel.text = carSelected.classType;
+    [carCitedSwitch setOn:carSelected.cited];
+    
+    
+}
+
+- (IBAction)carCitedSwitchValueChanged:(id)sender{
+    carSelected.cited = !carSelected.cited;
+    [carsDatabase replaceObjectAtIndex:selectedCarIndexPathRow withObject:carSelected];
+    NSData* data = [NSKeyedArchiver archivedDataWithRootObject:carsDatabase];
+    [[NSUserDefaults standardUserDefaults] setObject:data forKey:@"carsDatabase"];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,35 +54,51 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void) addCarToDatabase: (Cars *) tmpCar{
+- (BOOL) addCarToDatabase: (Cars *) tmpCar{
+    
+    for (Cars* car in carsDatabase){
+        if([tmpCar.licensePlateString isEqualToString:car.licensePlateString]){
+            return NO;
+        }
+    }
+    
     [carsDatabase addObject:tmpCar];
+    NSLog(@"Car db = %@", carsDatabase);
     NSData* data = [NSKeyedArchiver archivedDataWithRootObject:carsDatabase];
     [[NSUserDefaults standardUserDefaults] setObject:data forKey:@"carsDatabase"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
+    //[[NSUserDefaults standardUserDefaults] synchronize];
+    return YES;
 }
 
 - (void) setAppleObject: (id) tmp forKey: (NSString *) key{
     [[NSUserDefaults standardUserDefaults] setObject: tmp forKey: key];
-    [[NSUserDefaults standardUserDefaults] synchronize];
+    //[[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 -(id) loadObjectWithKey:(NSString *) key{
     id tmp;
     
     if ([key isEqualToString:@"carsDatabase"]){
-        if(!carsDatabase){
-            carsDatabase = [[NSMutableArray alloc] initWithCapacity:0];
+        tmp = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:key]];
+        if(!tmp){
+            tmp = [[NSMutableArray alloc] initWithCapacity:0];
+            NSLog(@"new");
         }
-        else{
-            carsDatabase = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:key]];
-        }
+        NSLog(@"tmp %@",tmp);
     }
     else{
         tmp = [[NSUserDefaults standardUserDefaults] objectForKey:key];
     }
-    
-    
     return tmp;
+}
+
+-(void)textFieldDidEndEditing:(UITextField *)textField{
+    NSLog(@"Did End Editing");
+    carSelected.make = carMakeTextField.text;
+    carSelected.model = carModelTextField.text;
+    [carsDatabase replaceObjectAtIndex:selectedCarIndexPathRow withObject:carSelected];
+    NSData* data = [NSKeyedArchiver archivedDataWithRootObject:carsDatabase];
+    [[NSUserDefaults standardUserDefaults] setObject:data forKey:@"carsDatabase"];
 }
 
 /*
@@ -81,5 +110,4 @@
     // Pass the selected object to the new view controller.
 }
 */
-
 @end

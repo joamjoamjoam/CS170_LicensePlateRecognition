@@ -15,7 +15,9 @@
 @property NSString* make;
 @property NSString* model;
 @property UIImage* licensePlateImage;
+@property NSString* classType;
+@property BOOL cited;
 
--(id) initWithLicensePlateString: (NSString *) plate make:(NSString *) passedMake model:(NSString *) passedModel andLicensePlateImage:(UIImage *) licenseImage;
+-(id) initWithLicensePlateString: (NSString *) plate classType: (NSString *) passedClassType andLicensePlateImage:(UIImage *) licenseImage;
 
 @end

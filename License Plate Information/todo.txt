@@ -1,8 +1,3 @@
-1. make sure scan layer is capturing the right photo
-2. crop that photo to only license plate
-3. make sure we are parsing image orrectly
-4. make sure that reg exp recognizes plates correctly
-4b. make sure that only letters are allowed in letter spots and numbers in number spots e.g. fix 2 being recognized as Z
-5. store and view cars in UITableView
-6. add back to scan button on root controller of Nav view
-7. Implement Datasource and TableView delegate methods in citationTVController
+
+4. add property to name make and model on detail screen
+5. add ability to check off car has been given citaion in detail screen and reflect status on UITableViewCell

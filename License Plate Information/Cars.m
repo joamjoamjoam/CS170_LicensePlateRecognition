@@ -14,15 +14,17 @@
 @synthesize make;
 @synthesize model;
 @synthesize licensePlateImage;
+@synthesize classType;
+@synthesize cited;
 
--(id) initWithLicensePlateString: (NSString *) plate make:(NSString *) passedMake model:(NSString *) passedModel andLicensePlateImage:(UIImage *)plateImage{
+-(id) initWithLicensePlateString: (NSString *) plate classType: (NSString *) passedClassType andLicensePlateImage:(UIImage *) licenseImage{
     
     self = [super init];
     if (self) {
         self.licensePlateString = plate;
-        self.make = passedMake;
-        self.model = passedModel;
-        self.licensePlateImage = plateImage;
+        self.licensePlateImage = licenseImage;
+        self.classType = passedClassType;
+        self.cited = NO;
     }
     return self;
 }
@@ -32,6 +34,8 @@
     self.make = [aDecoder decodeObjectForKey:@"make"];
     self.model = [aDecoder decodeObjectForKey:@"model"];
     self.licensePlateImage = [aDecoder decodeObjectForKey:@"licensePlateImage"];
+    self.classType = [aDecoder decodeObjectForKey:@"classType"];
+    self.cited = [aDecoder decodeBoolForKey:@"cited"];
     
     return self;
 }
@@ -41,6 +45,8 @@
     [coder encodeObject:self.make forKey:@"make"];
     [coder encodeObject:self.model forKey:@"model"];
     [coder encodeObject:self.licensePlateImage forKey:@"licensePlateImage"];
+    [coder encodeObject:self.classType forKey:@"classType"];
+    [coder encodeBool:self.cited forKey:@"cited"];
 }
 
 @end

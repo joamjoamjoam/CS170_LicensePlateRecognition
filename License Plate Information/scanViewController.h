@@ -10,13 +10,16 @@
 #import <TesseractOCR/TesseractOCR.h>
 #import "myCaptureManager.h"
 #import "Cars.h"
-@interface scanViewController : UIViewController <UIImagePickerControllerDelegate, G8TesseractDelegate,UINavigationControllerDelegate>
+@interface scanViewController : UIViewController <UIImagePickerControllerDelegate, G8TesseractDelegate,UINavigationControllerDelegate, AVCapturePhotoCaptureDelegate>
 
 @property UIImage* selectedImage;
 @property BOOL imageFromCamera;
 @property myCaptureManager* captureManager;
 @property UILabel* resultLabel;
 @property UIImageView* overlayView;
+@property UIImage* storedPhoto;
+@property UIButton* myButton;
+@property UIButton* segueButton;
 
 @end
 

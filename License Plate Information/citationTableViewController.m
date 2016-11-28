@@ -17,12 +17,23 @@
 
 @implementation citationTableViewController
 
+@synthesize myTableView;
+
 
 #pragma mark View Lifecycle Methods
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"Citations Needed";
     carsDatabase = [self loadObjectWithKey:@"carsDatabase"];
+    
+    NSLog(@"%lu", [carsDatabase count]);
+    NSLog(@"Ran");
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    NSLog(@"Did appear View");
+    [myTableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,7 +43,34 @@
 
 #pragma mark UTableView Datasource Methods
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [carsDatabase count];
+}
+
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *cellReuseIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellReuseIdentifier];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellReuseIdentifier];
+    }
+    
+    cell.textLabel.text = [[carsDatabase objectAtIndex:indexPath.row] licensePlateString];
+    return cell;
+}
+
+
 #pragma mark UITableView Delegate Methods
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"Row selected");
+    [[NSUserDefaults standardUserDefaults] setInteger:indexPath.row forKey:@"carSelectedIndexPathRow"];
+}
 
 
 #pragma mark My Helper Methods
@@ -53,12 +91,12 @@
     id tmp;
     
     if ([key isEqualToString:@"carsDatabase"]){
-        if(!carsDatabase){
-            carsDatabase = [[NSMutableArray alloc] initWithCapacity:0];
+        tmp = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:key]];
+        if(!tmp){
+            tmp = [[NSMutableArray alloc] initWithCapacity:0];
+            NSLog(@"new");
         }
-        else{
-            carsDatabase = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:key]];
-        }
+        NSLog(@"tmp %@",tmp);
     }
     else{
         tmp = [[NSUserDefaults standardUserDefaults] objectForKey:key];

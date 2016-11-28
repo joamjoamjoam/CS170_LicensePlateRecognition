@@ -13,8 +13,7 @@
 @synthesize captureSession;
 @synthesize videoPreviewLayer;
 @synthesize screenshotOutput;
-@synthesize photoSettings;
-@synthesize storedImage;
+@synthesize videoDevice;
 
 -(id) init{
     self = [super init];
@@ -29,17 +28,20 @@
     [self setVideoPreviewLayer:[[AVCaptureVideoPreviewLayer alloc] initWithSession:[self captureSession]]];
     [[self videoPreviewLayer] setVideoGravity:AVLayerVideoGravityResizeAspectFill];
     videoPreviewLayer.connection.videoOrientation = AVCaptureVideoOrientationLandscapeLeft;
+    
 }
 
 
 -(void) addVideoInput{
-    AVCaptureDevice *videoDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    videoDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
     if (videoDevice) {
         NSError *error;
         AVCaptureDeviceInput *videoIn = [AVCaptureDeviceInput deviceInputWithDevice:videoDevice error:&error];
         if (!error) {
             if ([[self captureSession] canAddInput:videoIn]){
                 [[self captureSession] addInput:videoIn];
+                [videoDevice lockForConfiguration:nil];
+                [videoDevice setTorchMode:AVCaptureTorchModeOn];
             }
         }
     }
@@ -47,20 +49,7 @@
 
 - (void) addCaptureLayer{
     screenshotOutput = [[AVCapturePhotoOutput alloc] init];
-    photoSettings = [AVCapturePhotoSettings photoSettings];
-}
-
--(void)captureOutput:(AVCapturePhotoOutput *)captureOutput didFinishProcessingPhotoSampleBuffer:(CMSampleBufferRef)photoSampleBuffer previewPhotoSampleBuffer:(CMSampleBufferRef)previewPhotoSampleBuffer resolvedSettings:(AVCaptureResolvedPhotoSettings *)resolvedSettings bracketSettings:(AVCaptureBracketedStillImageSettings *)bracketSettings error:(NSError *)error
-{
-    if (error) {
-        NSLog(@"error : %@", error);
-    }
-    
-    if (photoSampleBuffer) {
-        NSData *data = [AVCapturePhotoOutput JPEGPhotoDataRepresentationForJPEGSampleBuffer:photoSampleBuffer previewPhotoSampleBuffer:previewPhotoSampleBuffer];
-        UIImage *image = [UIImage imageWithData:data];
-        
-        storedImage = image;
-    }
+    [[self captureSession] addOutput:screenshotOutput];
+    [screenshotOutput connectionWithMediaType:AVMediaTypeVideo].videoOrientation = AVCaptureVideoOrientationLandscapeLeft;
 }
 @end

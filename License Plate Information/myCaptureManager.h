@@ -11,14 +11,13 @@
 #import <AVFoundation/AVFoundation.h>
 #import <UIKit/UIKit.h>
 
-@interface myCaptureManager : NSObject <AVCapturePhotoCaptureDelegate>
+@interface myCaptureManager : NSObject 
 
 
 @property AVCaptureVideoPreviewLayer* videoPreviewLayer;
 @property AVCaptureSession* captureSession;
 @property AVCapturePhotoOutput* screenshotOutput;
-@property AVCapturePhotoSettings* photoSettings;
-@property UIImage* storedImage;
+@property AVCaptureDevice* videoDevice;
 
 
 -(void) addVideoPreviewLayer;
