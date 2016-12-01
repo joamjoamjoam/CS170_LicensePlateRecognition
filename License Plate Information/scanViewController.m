@@ -100,7 +100,11 @@
     
     [[captureManager captureSession] startRunning];
     
-    Cars* tmpCar = [[Cars alloc] initWithLicensePlateString:@"2DGT4568" classType:[self isValidLicensePlate:@"2DGT4568"] andLicensePlateImage:[UIImage imageNamed:@"IMG_2132.JPG"]];
+    UIImage* tmpImage = [UIImage imageNamed:@"IMG_2132.JPG"];
+    
+    Cars* tmpCar = [[Cars alloc] initWithLicensePlateString:@"2DGT4568" classType:[self isValidLicensePlate:@"2DGT4568"] andLicensePlateImage:tmpImage];
+    
+    NSLog(@"set image = %@", tmpCar.licensePlateImage);
     
     [self addCarToDatabase:tmpCar];
     
@@ -143,7 +147,7 @@
 
 - (void) citationBtnPressed{
     
-    captureManager.videoDevice.torchMode = AVCaptureTorchModeOff;
+    //captureManager.videoDevice.torchMode = AVCaptureTorchModeOff;
     [self performSegueWithIdentifier:@"scanToCitationSegue" sender:self];
 }
 
@@ -151,7 +155,7 @@
     // Create your G8Tesseract object using the initWithLanguage method:
     BOOL addedCar = NO;
     NSString* type = @"";
-    captureManager.videoDevice.torchMode = AVCaptureTorchModeOff;
+    //captureManager.videoDevice.torchMode = AVCaptureTorchModeOff;
     G8Tesseract *tesseract = [[G8Tesseract alloc] initWithLanguage:@"eng+fra"];
     
     tesseract.engineMode = G8OCREngineModeTesseractCubeCombined;
@@ -185,7 +189,7 @@
     if (![type isEqualToString:@"NO"]){
         // valid license plate add to cars Database and save
         NSLog(@"Adding car.");
-        Cars* tmp = [[Cars alloc] initWithLicensePlateString:recognizedText classType: type andLicensePlateImage:imageWithBlocks];
+        Cars* tmp = [[Cars alloc] initWithLicensePlateString:recognizedText classType: type andLicensePlateImage:image];
         addedCar = [self addCarToDatabase:tmp];
         if (addedCar) {
             resultLabel.text = [NSString stringWithFormat:@"Number is: %@ and car was added.", recognizedText];
@@ -218,7 +222,7 @@
     // enable button here
     myButton.hidden = NO;
     segueButton.hidden = NO;
-    captureManager.videoDevice.torchMode = AVCaptureTorchModeOn;
+    //captureManager.videoDevice.torchMode = AVCaptureTorchModeOn;
 }
 
 - (void) resetOverlayView{
@@ -314,7 +318,7 @@
     
     NSLog(@"Testing string: %@", recognizedText);
     
-    if(recognizedText){
+    if(recognizedText && [recognizedText length] == 7){
         if([[validCommercialPlateRegExp matchesInString:recognizedText options:0 range:NSMakeRange(0, [recognizedText length])] count] > 0){
             NSLog(@"At least 1 Commercial Match.");
             return @"Commercial";
@@ -337,9 +341,12 @@
     
     for (Cars* car in carsDatabase){
         if([tmpCar.licensePlateString isEqualToString:car.licensePlateString]){
+            NSLog(@"car already exists"); 
             return NO;
         }
     }
+    
+    NSLog(@"tmpCar image = %@", tmpCar.licensePlateImage);
     
     [carsDatabase addObject:tmpCar];
     NSLog(@"Car db = %@", carsDatabase);
@@ -458,7 +465,7 @@
     }
     
     
-    if( (hue > 198 && hue < 270) && sat > .4 && (value > .2 && value < .7)){      // if pixel is blue ish then set it black
+    if( (hue > 198 && hue < 270) && sat > .3 && (value > .4 && value < .7)){      // if pixel is blue ish then set it black
         buffer[r] = 0;
         buffer[g] = 0;
         buffer[b] = 0;

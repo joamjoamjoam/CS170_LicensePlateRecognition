@@ -33,7 +33,7 @@
     self.licensePlateString = [aDecoder decodeObjectForKey:@"licensePlateString"];
     self.make = [aDecoder decodeObjectForKey:@"make"];
     self.model = [aDecoder decodeObjectForKey:@"model"];
-    self.licensePlateImage = [aDecoder decodeObjectForKey:@"licensePlateImage"];
+    self.licensePlateImage = [UIImage imageWithData:[aDecoder decodeObjectForKey:@"plateImage"]];
     self.classType = [aDecoder decodeObjectForKey:@"classType"];
     self.cited = [aDecoder decodeBoolForKey:@"cited"];
     
@@ -44,7 +44,7 @@
     [coder encodeObject:self.licensePlateString forKey:@"licensePlateString"];
     [coder encodeObject:self.make forKey:@"make"];
     [coder encodeObject:self.model forKey:@"model"];
-    [coder encodeObject:self.licensePlateImage forKey:@"licensePlateImage"];
+    [coder encodeObject:UIImagePNGRepresentation(self.licensePlateImage) forKey:@"plateImage"];
     [coder encodeObject:self.classType forKey:@"classType"];
     [coder encodeBool:self.cited forKey:@"cited"];
 }

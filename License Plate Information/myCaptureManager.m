@@ -41,7 +41,7 @@
             if ([[self captureSession] canAddInput:videoIn]){
                 [[self captureSession] addInput:videoIn];
                 [videoDevice lockForConfiguration:nil];
-                [videoDevice setTorchMode:AVCaptureTorchModeOn];
+                //[videoDevice setTorchMode:AVCaptureTorchModeOn];
             }
         }
     }

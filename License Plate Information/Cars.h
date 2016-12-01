@@ -14,7 +14,7 @@
 @property NSString* licensePlateString;
 @property NSString* make;
 @property NSString* model;
-@property UIImage* licensePlateImage;
+@property (strong, nonatomic) UIImage* licensePlateImage;
 @property NSString* classType;
 @property BOOL cited;
 

@@ -26,12 +26,17 @@
 @synthesize carModelTextField;
 - (void)viewDidLoad {
     [super viewDidLoad];
-    carsDatabase = [self loadObjectWithKey:@"carsDatabase"];
+    carsDatabase =  [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"carsDatabase"]];//[self loadObjectWithKey:@"carsDatabase"];
     selectedCarIndexPathRow = [[NSUserDefaults standardUserDefaults] integerForKey:@"carSelectedIndexPathRow"];
+    
+    NSLog(@"");
+    
     carSelected = [carsDatabase objectAtIndex:selectedCarIndexPathRow];
     
     carMakeTextField.text = carSelected.make;
     carModelTextField.text = carSelected.model;
+    
+    NSLog(@"car image = %@", carSelected.licensePlateImage);
     
     carImageView.image = carSelected.licensePlateImage;
     carLicensePlateLabel.text = carSelected.licensePlateString;
@@ -76,7 +81,7 @@
 }
 
 -(id) loadObjectWithKey:(NSString *) key{
-    id tmp;
+    NSMutableArray* tmp;
     
     if ([key isEqualToString:@"carsDatabase"]){
         tmp = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:key]];
@@ -85,9 +90,6 @@
             NSLog(@"new");
         }
         NSLog(@"tmp %@",tmp);
-    }
-    else{
-        tmp = [[NSUserDefaults standardUserDefaults] objectForKey:key];
     }
     return tmp;
 }
